@@ -1,0 +1,13 @@
+- 添加到工程[【QCustomPlot】1.0 - QCustomPlot库添加到自己的工程、创建工程_Mark_md的博客-CSDN博客](https://blog.csdn.net/mark_md/article/details/108995981)
+- 所有类的关系[Class Overview (qcustomplot.com)](https://www.qcustomplot.com/documentation/classoverview.html)
+- 提供六个层：背景层，网格层，主层，坐标轴层，图例层，矩形选择区域层
+- QCPAbstractPlottable：绘图元素，包含：折线图(QCPGraph)、曲线图(QCPCurve)、柱状图(QCPBars)、QCPStatiBox(盒子图)、QCPColorMap(色谱图)、QCPFinancial(金融图)
+- QCPAbstractItem：标示项，包含：直线(QCPItemStraightLine)、线段(QCPItemLine)、曲线(QCPItemCurve)、矩形(QCPItemRect)、椭圆(QCPItemEllipse)、文本(QCPItemText)、小圆球(QCPItemTracer)、图片(QCPItemPixmap)、括弧(QCPItemBracket)
+- 布局项(QCPLayoutElement)：布局项(QCPAbstractLegendItem)、坐标轴矩形(QCPAxisRect)
+- 网格线(QCPGrid)：每一个坐标轴对应一个网格线
+- 坐标轴(QCPAxis)：一个坐标轴矩形包含四个坐标轴，上下左右四个坐标轴
+- QCustomPlot使用手册[QCustomPlot使用手册（持续更新中。。。） - QTCN开发网 - Powered by phpwind](http://www.qtcn.org/bbs/read-htm-tid-88422.html)
+- [QCustomPlot - 随笔分类 - 朝十晚八 - 博客园 (cnblogs.com)](https://www.cnblogs.com/swarmbees/category/908110.html)
+- [lowbees - SegmentFault 思否](https://segmentfault.com/u/lowbees)
+- [QCustomPlot 的使用 散点图 升级版（菜单、图例、鼠标显示值） - 灰信网（软件开发博客聚合） (freesion.com)](https://www.freesion.com/article/62891143391/)
+- 
