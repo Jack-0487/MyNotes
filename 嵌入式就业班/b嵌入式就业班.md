@@ -1,3 +1,8 @@
+# other
+
+- Nor flash 和Nand flash
+  - Nor flash按字节访问，Nand flash 按块访问
+
 # 系统移植
 
 - 硬件变化以后软件必须做相应调整，系统移植就是针对相应产品定位进行定制，定制包括软件及硬件
@@ -58,5 +63,36 @@
   - 数据传输
     - tftp 通过网络下载程序
   - 存储器访问
+    - nor
+      - protect on/off 对Nor flash写保护
+      - erase all / erase 0 10000 檫除flash所有的扇区/擦除区间[0x0, 0x100000]擦除
+    - nand
+      - nand read addr
+      - nand write addr
+      - nand erase [clear]\[off size] 
+    - movi
+      - movi init
+      - movi read u-boot/kernel addr
+      - movi write u-boot/kernel addr
+      - movi read/write rootfs addr size
   - 加载运行
-- 
+    - bootcmd 自启动命令
+      - 自动运行多个命令
+      - 如果定义了该变量，在自启动模式下将会执行该环境变量中的命令
+
+## uboot编译
+
+![image-20230423210109078](image-20230423210109078.png)
+
+## uboot下载烧录
+
+![image-20230423210226435](image-20230423210226435.png)
+
+## uboot目录结构
+
+- arch cpu相关代码
+- board 单板
+- common 通用命令
+- drivers 驱动
+- net 网络
+- ![image-20230423210639931](image-20230423210639931.png)
